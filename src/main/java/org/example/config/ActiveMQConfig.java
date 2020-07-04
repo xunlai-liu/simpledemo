@@ -65,7 +65,7 @@ public class ActiveMQConfig {
     public JmsListenerContainerFactory t2ListenerContainerFactory(ConnectionFactory connectionFactory){
         DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
         factory.setConnectionFactory(connectionFactory);
-//        factory.setPubSubDomain(true);
+        factory.setPubSubDomain(true);
         return factory;
     }
     //定义一个消息监听器连接工厂，这里定义的是点对点模式的监听器连接工厂
