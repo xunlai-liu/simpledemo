@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: ha-hello
+  resources:
+    static-locations: classpath:/static/chart/
+  thymeleaf:
+    prefix: classpath:/static/chart/
+  activemq:
+    broker-url: tcp://60.205.94.149:61616
+    user: admin
+    password: admin
+    pool:
+      enabled: false
+
+devtools:
+  livereload:
+    enabled: true #是否支持livereload
+    port: 35729
+  restart:
+    enabled: true #是否支持热部署
