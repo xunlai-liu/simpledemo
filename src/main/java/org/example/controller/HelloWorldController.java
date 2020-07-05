@@ -19,14 +19,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
 
     @GetMapping("get")
-    @ResponseBody
     public Result<String> get(){
         return new Result<>(ResultEnum.SUCCESS, "hello DSM");
     }
 
     @RequestMapping("deExcp")
     public Result<String> deException(){
-        if (false){
+        if (true){
             throw new DefinitionException(ResultEnum.SERVER_ERROR.getCode(), "出错了");
         }
         return new Result<>(ResultEnum.SUCCESS, "");
