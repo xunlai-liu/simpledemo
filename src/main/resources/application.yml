@@ -21,3 +21,8 @@ devtools:
     port: 35729
   restart:
     enabled: true #是否支持热部署
+
+es:
+  host: 192.168.147.132
+  port: 9200
+  scheme: http

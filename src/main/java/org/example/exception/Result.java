@@ -6,7 +6,7 @@ import lombok.Data;
  * @author xunlailiu
  * @date 2020/07/03
  */
-//@Data
+@Data
 public class Result<T> {
 
     private Integer code;
@@ -54,7 +54,6 @@ public class Result<T> {
     public static Result<Object> otherError(ResultEnum resultEnum) {
         return new Result<>(resultEnum);
     }
-
 
 
 }
