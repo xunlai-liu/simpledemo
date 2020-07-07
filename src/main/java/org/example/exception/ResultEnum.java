@@ -17,7 +17,8 @@ public enum ResultEnum {
     SERVER_ERROR(500, " 服务器运行异常"),
     NOT_PARAM(10001, "参数不能为空"),
     NOT_EXIST_USER_OR_ERROR_PASSWORD(10002, "该用户不存在或密码错误"),
-    NOT_PARAM_USER_OR_ERROR_PASSWORD(10003, "用户名或密码为空");;
+    NOT_PARAM_USER_OR_ERROR_PASSWORD(10003, "用户名或密码为空"),
+    NO_ELASTIC_INDEX(10004, "用户名或密码为空");
     /**
      * 响应码
      */
